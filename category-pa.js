@@ -192,7 +192,7 @@
         function loadCategory() {
             const category = categoryData[categoryId];
             if (!category) {
-                window.location.href = 'service-marketplace.html';
+                window.location.href = 'index.html';
                 return;
             }
 
@@ -241,3 +241,4 @@
             }
         `;
         document.head.appendChild(style);
+
