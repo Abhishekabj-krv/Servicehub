@@ -4,28 +4,28 @@
                 name: 'Home Services',
                 icon: '🏠',
                 description: 'Plumbing, cleaning, painting, and more',
-                count: 120
+                count: 10+
             },
             {
                 id: 'wedding',
                 name: 'Wedding Services',
                 icon: '💒',
                 description: 'Catering, photography, decoration',
-                count: 85
+                count: 10+
             },
             {
                 id: 'repair',
                 name: 'Repair & Maintenance',
                 icon: '🔧',
                 description: 'AC, appliances, electrical work',
-                count: 95
+                count: 5+
             },
             {
                 id: 'professional',
                 name: 'Professional Services',
                 icon: '💼',
                 description: 'Legal, accounting, consulting',
-                count: 60
+                count: 5+
             }
         ];
 
@@ -247,4 +247,5 @@
                 closeModal();
             }
         });
+
     
