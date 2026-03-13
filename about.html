@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ServiceHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E85A2A;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #1A1A2E;
+            --light: #F7F7F7;
+            --white: #FFFFFF;
+            --text: #2D3748;
+            --text-light: #718096;
+            --gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(78, 205, 196, 0.05) 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .hero .highlight {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .about-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .about-card h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .about-card h2 .icon {
+            font-size: 2.5rem;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-card ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .about-card ul li {
+            padding: 0.8rem 0;
+            font-size: 1.05rem;
+            color: var(--text);
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+        }
+
+        .about-card ul li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .stat-box .number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box .label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* Location Map */
+        .location-section {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .location-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .location-icon {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        .location-section p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .expansion-timeline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .timeline-item {
+            text-align: center;
+        }
+
+        .timeline-item .phase {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .timeline-item .location {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .contact-cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .contact-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: var(--white);
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 2rem;
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .expansion-timeline {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="service-marketplace.html" class="back-btn">
+                ← Back to Home
+            </a>
+            <a href="service-marketplace.html" class="logo">ServiceHub</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>About <span class="highlight">ServiceHub</span></h1>
+        <p>Your trusted partner for quality services across Karnataka</p>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <!-- Who We Are -->
+        <div class="about-card">
+            <h2><span class="icon">🎯</span> Who We Are</h2>
+            <p>
+                ServiceHub is a leading service marketplace based in <strong>Bangalore, Karnataka</strong>. We connect customers with verified, professional service providers across multiple categories including home services, wedding planning, repairs & maintenance, and professional services.
+            </p>
+            <p>
+                Founded with a vision to make quality services accessible to everyone, we bridge the gap between service seekers and skilled professionals. Our platform ensures reliability, transparency, and customer satisfaction at every step.
+            </p>
+        </div>
+
+        <!-- Our Mission -->
+        <div class="about-card">
+            <h2><span class="icon">🚀</span> Our Mission</h2>
+            <p>
+                To become Karnataka's most trusted service marketplace by providing seamless connections between customers and verified professionals, ensuring quality, reliability, and convenience.
+            </p>
+            <ul>
+                <li>Connect customers with verified and trusted service providers</li>
+                <li>Ensure quality and professionalism in every service</li>
+                <li>Make services accessible and affordable for everyone</li>
+                <li>Build a community of skilled professionals across Karnataka</li>
+            </ul>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="number">500+</span>
+                <span class="label">Service Providers</span>
+            </div>
+            <div class="stat-box">
+                <span class="number">2,500+</span>
+                <span class="label">Happy Customers</span>
+            </div>
+            <div class="stat-box">
+                <span class="number">15+</span>
+                <span class="label">Service Categories</span>
+            </div>
+            <div class="stat-box">
+                <span class="number">24/7</span>
+                <span class="label">Support Available</span>
+            </div>
+        </div>
+
+        <!-- Location & Expansion -->
+        <div class="location-section">
+            <h2>📍 Our Location & Expansion</h2>
+            <div class="location-icon">🏢</div>
+            <p><strong>Currently Serving:</strong> Bangalore, Karnataka</p>
+            <p>
+                We are proudly based in Bangalore and currently serving the entire Bangalore metropolitan area. 
+                Our goal is to expand across Karnataka and bring quality services to every corner of the state.
+            </p>
+
+            <div class="expansion-timeline">
+                <div class="timeline-item">
+                    <div class="phase">Phase 1 (Current)</div>
+                    <div class="location">📍 Bangalore</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="timeline-item">
+                    <div class="phase">Phase 2 (Coming Soon)</div>
+                    <div class="location">📍All Over Karnataka</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="timeline-item">
+                    <div class="phase">Phase 3 (Future)</div>
+                    <div class="location">📍 All Over India</div>
+                </div>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 1.05rem;">
+                <strong>Headquarters:</strong> Bangalore, Karnataka, India
+            </p>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="about-card">
+            <h2><span class="icon">⭐</span> Why Choose ServiceHub?</h2>
+            <ul>
+                <li><strong>Verified Professionals:</strong> All service providers are thoroughly verified and background-checked</li>
+                <li><strong>Transparent Pricing:</strong> No hidden charges, clear pricing structure</li>
+                <li><strong>Quality Assurance:</strong> We ensure high-quality service delivery</li>
+                <li><strong>24/7 Support:</strong> Our team is always available to help you</li>
+                <li><strong>Wide Range of Services:</strong> From home services to professional consulting</li>
+                <li><strong>Customer First:</strong> Your satisfaction is our priority</li>
+            </ul>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="contact-cta">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to book a service or list your business on our platform</p>
+            <div class="contact-buttons">
+                <a href="tel:+918012345678" class="contact-btn">
+                    📞 Call Us: +91 8970816072
+                </a>
+                <a href="mailto:abhishekabj460@gmail.com?subject=Your Subject" class="contact-btn">
+                    ✉️ Email Us
+                </a>
+                <a href="service-marketplace.html" class="contact-btn">
+                    🏠 Browse Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ServiceHub. All rights reserved. Made with ❤️ in Bangalore, Karnataka</p>
+    </footer>
+</body>
+</html>
