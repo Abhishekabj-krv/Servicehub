@@ -8,6 +8,7 @@
             { name: 'Pest Control', icon: '🐛', category: 'home', categoryName: 'Home Services', description: 'Safe and effective pest control solutions for your home.', contact: '+91 9902236917', features: ['Safe Chemicals', 'Certified Technicians', '3 Months Warranty'] },
             { name: 'Carpentry Works', icon: '🪚', category: 'home', categoryName: 'Home Services', description: 'Custom furniture and carpentry solutions for your home.', contact: '+91 9902236917', features: ['Custom Designs', 'Quality Wood', 'Installation Included'] },
             { name: 'Home Appliance Repair', icon: '🔌', category: 'home', categoryName: 'Home Services', description: 'Repair services for all home appliances - washing machines, refrigerators, etc.', contact: '+91 9902236917', features: ['All Brands Covered', 'Same Day Service', 'Genuine Parts'] },
+            { name: 'Masonry & Brickwork', icon: '🧱', description: 'Professional masonry services including brickwork, cement work, wall construction, and plastering.', contact: '+91 98765-43232',features: ['Wall Construction & Repair', 'Plastering & Cement Work', 'Brick Laying', 'Experienced Masons']},
             
             // Wedding Services
             { name: 'Wedding Photography', icon: '📸', category: 'wedding', categoryName: 'Wedding Services', description: 'Smartify offers wireless and wired home automation solutions from premium brands, with personalized setup.', contact: '+91 9902236917', features: ['Automated Lighting', 'Smart Thermostats', 'Smart-automated door systems'] },
