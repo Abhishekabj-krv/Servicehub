@@ -44,7 +44,7 @@
                        name: 'Masonry & Brickwork',
                        icon: '🧱',
                        description: 'Professional masonry services including brickwork, cement work, wall construction, and plastering.',
-                       contact: '+91 98765-43232',
+                       contact: '+91 9902236917',
                        features: ['Wall Construction & Repair', 'Plastering & Cement Work', 'Brick Laying', 'Experienced Masons']
                    },
                     {
