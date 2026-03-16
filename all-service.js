@@ -52,10 +52,6 @@
                     <ul class="service-features">
                         ${service.features.map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
-                    <div class="contact-section">
-                        <span class="contact-label">📞 Contact Our Team:</span>
-                        <a href="tel:${service.contact}" class="contact-number">${service.contact}</a>
-                    </div>
                     <button class="call-btn" onclick="window.location.href='tel:${service.contact}'">
                         📞 Call Now
                     </button>
