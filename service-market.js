@@ -24,7 +24,7 @@
                 id: 'professional',
                 name: 'Professional Services',
                 icon: '💼',
-                description: 'Legal, accounting, consulting',
+                description: 'Tutoring, accounting, consulting',
                 count: 5
             }
         ];
@@ -93,14 +93,6 @@
                 icon: '🎉',
                 features: ['Custom Themes', 'Stage Setup', 'Lighting Included'],
                 gradient: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)'
-            },
-            {
-                id: 9,
-                name: 'Legal Consultation',
-                category: 'professional',
-                icon: '⚖️',
-                features: ['15+ Years Experience', 'All Legal Matters', 'Confidential'],
-                gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)'
             }
         ];
 
