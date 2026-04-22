@@ -19,13 +19,6 @@
                 icon: '🔧',
                 description: 'AC, appliances, electrical work',
                 count: 5
-            },
-            {
-                id: 'professional',
-                name: 'Professional Services',
-                icon: '💼',
-                description: 'Tutoring, accounting, consulting',
-                count: 5
             }
         ];
 
