@@ -23,12 +23,8 @@
             { name: 'AC Repair & Service', icon: '❄️', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Complete AC installation, repair, and maintenance services.', contact: '+91 9902236917', features: ['All Brands Covered', 'Same Day Service', 'Gas Filling'] },
             { name: 'Electrical Services', icon: '⚡', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Licensed electricians for all electrical work and repairs.', contact: '+91 9902236917', features: ['Certified Electricians', 'Safety Guaranteed', 'Emergency Service'] },
             { name: 'Geyser Repair', icon: '🚿', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Installation and repair of water heaters and geysers.', contact: '+91 9902236917', features: ['All Types', 'Element Replacement', 'Thermostat Repair'] },
-            { name: 'RO Water Purifier Service', icon: '💧', category: 'repair', categoryName: 'Repair & Maintenance', description: 'RO installation, repair, and annual maintenance services.', contact: '+91 9902236917', features: ['Filter Replacement', 'All Brands', 'AMC Available'] },
-            
-            // Professional Services
-            { name: 'Tax & Accounting', icon: '📊', category: 'professional', categoryName: 'Professional Services', description: 'Professional tax filing, accounting, and financial services.', contact: '+91 9902236917', features: ['Income Tax Filing', 'GST Services', 'Accounting'] },
-            { name: 'Interior Design', icon: '🏡', category: 'professional', categoryName: 'Professional Services', description: 'Creative interior design solutions for homes and offices.', contact: '+91 9902236917', features: ['3D Designs', 'Budget Planning', 'Complete Execution'] },
-            { name: 'Tutoring Services', icon: '📚', category: 'professional', categoryName: 'Professional Services', description: 'Home tutoring for all subjects and competitive exams.', contact: '+91 9902236917', features: ['All Subjects', 'Experienced Teachers', 'Flexible Timings'] }
+            { name: 'RO Water Purifier Service', icon: '💧', category: 'repair', categoryName: 'Repair & Maintenance', description: 'RO installation, repair, and annual maintenance services.', contact: '+91 9902236917', features: ['Filter Replacement', 'All Brands', 'AMC Available'] }
+         
         ];
 
         let currentFilter = 'all';
