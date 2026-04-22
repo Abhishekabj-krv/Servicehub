@@ -23,8 +23,12 @@
             { name: 'AC Repair & Service', icon: '❄️', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Complete AC installation, repair, and maintenance services.', contact: '+91 9902236917', features: ['All Brands Covered', 'Same Day Service', 'Gas Filling'] },
             { name: 'Electrical Services', icon: '⚡', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Licensed electricians for all electrical work and repairs.', contact: '+91 9902236917', features: ['Certified Electricians', 'Safety Guaranteed', 'Emergency Service'] },
             { name: 'Geyser Repair', icon: '🚿', category: 'repair', categoryName: 'Repair & Maintenance', description: 'Installation and repair of water heaters and geysers.', contact: '+91 9902236917', features: ['All Types', 'Element Replacement', 'Thermostat Repair'] },
-            { name: 'RO Water Purifier Service', icon: '💧', category: 'repair', categoryName: 'Repair & Maintenance', description: 'RO installation, repair, and annual maintenance services.', contact: '+91 9902236917', features: ['Filter Replacement', 'All Brands', 'AMC Available'] }
-         
+            { name: 'RO Water Purifier Service', icon: '💧', category: 'repair', categoryName: 'Repair & Maintenance', description: 'RO installation, repair, and annual maintenance services.', contact: '+91 9902236917', features: ['Filter Replacement', 'All Brands', 'AMC Available'] },
+
+            // Smart Home & Automation
+           { name: 'Automatic Gate Installation',icon: '🚧',  category: 'automation',  categoryName: 'Smart Home & Automation', description: 'Motorized gate setups for sliding and swing gates with remote access.', contact: '+91 9902236917', features: ['Remote & App Access', 'Safety Sensors', 'Heavy-Duty Motors']},
+           { name: 'Smart Light Integration',  icon: '💡', category: 'automation',  categoryName: 'Smart Home & Automation',  description: 'Automated lighting systems controlled via voice, app, or motion sensors.',  contact: '+91 9902236917',  features: ['App & Voice Control', 'Energy Efficient', 'Custom Ambience'] },
+           { name: 'Smart Door & Anti-Theft System', icon: '🔐', category: 'automation', categoryName: 'Smart Home & Automation', description: 'Advanced biometric locks and smart theft authentication security systems.', contact: '+91 9902236917', features: ['Biometric & RFID Access', 'Intruder Alerts', '24/7 Monitoring'] }    
         ];
 
         let currentFilter = 'all';
