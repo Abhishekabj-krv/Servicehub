@@ -147,6 +147,34 @@
                     }
                 ]
             },
+                automation: {
+                name: 'Smart Home & Automation',
+                icon: '🤖',
+                description: 'Advanced smart home setups and security automation',
+                services: [
+                    {
+                        name: 'Automatic Gate Installation',
+                        icon: '🚧',
+                        description: 'Motorized gate setups for sliding and swing gates with remote access.',
+                        contact: '+91 9902236917',
+                        features: ['Remote & App Access', 'Safety Sensors', 'Heavy-Duty Motors', '1-Year Maintenance']
+                    },
+                    {
+                        name: 'Smart Light Integration',
+                        icon: '💡',
+                        description: 'Automated lighting systems controlled via voice, app, or motion sensors.',
+                        contact: '+91 9902236917',
+                        features: ['App & Voice Control', 'Energy Efficient', 'Custom Ambience', 'Smart Scheduling']
+                    },
+                    {
+                        name: 'Smart Door & Anti-Theft System',
+                        icon: '🔐',
+                        description: 'Advanced biometric locks and smart theft authentication security systems.',
+                        contact: '+91 9902236917',
+                        features: ['Biometric & RFID Access', 'Intruder Alerts', '24/7 Monitoring', 'Battery Backup']
+                    }
+                ]
+            }
         };
 
         // Get category from URL parameter or default to 'home'
