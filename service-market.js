@@ -19,6 +19,13 @@
                 icon: '🔧',
                 description: 'AC, appliances, electrical work',
                 count: 5
+            },
+          {
+                id: 'automation',
+                name: 'Smart Home & Automation',
+                icon: '🤖',
+                description: 'Smart gates, lighting, security locks',
+                count: 3
             }
         ];
 
@@ -33,6 +40,14 @@
             },
             {
                 id: 2,
+                name: 'Automatic Gate Installation',
+                category: 'automation',
+                icon: '🚧',
+                features: ['Remote & App Access', 'Heavy-Duty Motors', '1-Year Maintenance'],
+                gradient: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)' // Warm mechanical orange/yellow
+            },
+            {
+                id: 3,
                 name: 'Professional Painting',
                  category: 'home',
                 icon: '🎨',
@@ -40,7 +55,7 @@
                 gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
             },
             {
-                id: 3,
+                id:4,
                 name: 'Wedding Photography',
                 category: 'wedding',
                 icon: '📸',
@@ -48,7 +63,15 @@
                 gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
             },
             {
-                id: 4,
+                id: 5,
+                name: 'Smart Door & Anti-Theft System',
+                category: 'automation',
+                icon: '🔐',
+                features: ['Biometric & RFID Access', 'Intruder Alerts', '24/7 Monitoring'],
+                gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)' // Premium soft purple/pink
+            },
+            {
+                id: 6,
                 name: 'Wedding Catering',
                 category: 'wedding',
                 icon: '🍽️',
@@ -56,7 +79,7 @@
                 gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
             },
             {
-                id: 5,
+                id: 7,
                 name: 'AC Repair & Service',
                 category: 'repair',
                 icon: '❄️',
@@ -64,7 +87,7 @@
                 gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
             },
             {
-                id: 6,
+                id: 8,
                 name: 'Electrical Services',
                 category: 'repair',
                 icon: '⚡',
@@ -72,7 +95,7 @@
                 gradient: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
             },
             {
-                id: 7,
+                id: 9,
                 name: 'Deep House Cleaning',
                 category: 'home',
                 icon: '✨',
@@ -80,12 +103,21 @@
                 gradient: 'linear-gradient(135deg, #fdeb71 0%, #f8d800 100%)'
             },
             {
-                id: 8,
+                id: 10,
                 name: 'Wedding Decoration',
                 category: 'wedding',
                 icon: '🎉',
                 features: ['Custom Themes', 'Stage Setup', 'Lighting Included'],
                 gradient: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)'
+            },
+            
+            {
+                id: 11,
+                name: 'Smart Light Integration',
+                category: 'automation',
+                icon: '💡',
+                features: ['App & Voice Control', 'Custom Ambience', 'Smart Scheduling'],
+                gradient: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)' // Bright neon green/blue
             }
         ];
 
