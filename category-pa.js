@@ -147,34 +147,6 @@
                     }
                 ]
             },
-            professional: {
-                name: 'Professional Services',
-                icon: '💼',
-                description: 'Expert professional services for your needs',
-                services: [
-                    {
-                        name: 'Tax & Accounting',
-                        icon: '📊',
-                        description: 'Professional tax filing, accounting, and financial services.',
-                        contact: '+91 9902236917',
-                        features: ['Income Tax Filing', 'GST Services', 'Accounting', 'Financial Planning']
-                    },
-                    {
-                        name: 'Interior Design',
-                        icon: '🏡',
-                        description: 'Creative interior design solutions for homes and offices.',
-                        contact: '+91 9902236917',
-                        features: ['3D Designs', 'Budget Planning', 'Complete Execution', 'Turnkey Projects']
-                    },
-                    {
-                        name: 'Tutoring Services',
-                        icon: '📚',
-                        description: 'Home tutoring for all subjects and competitive exams.',
-                        contact: '+91 9902236917',
-                        features: ['All Subjects', 'Experienced Teachers', 'Flexible Timings', 'One-on-One Classes']
-                    }
-                ]
-            }
         };
 
         // Get category from URL parameter or default to 'home'
